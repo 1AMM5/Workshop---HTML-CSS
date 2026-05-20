@@ -18,9 +18,65 @@
     --secondary-dark-gray: #707070;
 
     --font-open-sans: "Open Sans", sans-serif;
-    --font-raleway: "Raleway", sans-serif:
+    --font-raleway: "Raleway", sans-serif;
 }
 
 * {
   box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-open-sans);
+}
+
+header {
+  height: 70px;
+  box-shadow: 0 3px 6px rgba(0,0,0,.16);
+}
+
+.container {
+  width: 1352px;
+  margin: 0 auto;
+}
+
+.header__container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 0 60;
+}
+
+.logo {
+  font-family: var(--font-raleway);
+  font-size: 32px;
+  font-weight: 300;
+  color: var(--primary-blue);
+  padding-left: 70px;
+}
+
+a { text-decoration: none;}
+
+.header__nav {
+  /*color: var(--secondary-gray);*/
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: bold;
+
+  display: flex;
+  gap: 9em;
+  letter-spacing: 0.2em;
+  padding-right: 70px;
+}
+
+.nav__link {
+  color: var(--secondary-gray);
+  padding: 15px 0 25px;
+  border-bottom: 4px solid transparent;
+}
+
+.nav__element :hover {
+  color:var(--black);
+  cursor: pointer;
+  border-color: var(--primary-blue);
 }
