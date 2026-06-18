@@ -49,10 +49,9 @@ header {
 
 .logo {
   font-family: var(--font-raleway);
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: 300;
   color: var(--primary-blue);
-  padding-left: 70px;
 }
 
 a { text-decoration: none;}
@@ -66,7 +65,7 @@ a { text-decoration: none;}
   display: flex;
   gap: 9em;
   letter-spacing: 0.2em;
-  padding-right: 70px;
+  padding-right: 10px;
 }
 
 .nav__link {
@@ -80,3 +79,51 @@ a { text-decoration: none;}
   cursor: pointer;
   border-color: var(--primary-blue);
 }
+
+.opening {
+  padding-top: 120px;
+  color: var(--black);
+
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.opening__section {
+  text-align: center;
+  color: var(--black);
+}
+
+.opening__section__title {
+  text-align: center;
+  font: normal normal normal 3.063rem var(--font-raleway);
+
+  opacity: 1;
+}
+
+.opening__section__content {
+  text-align: center;
+  font: normal normal normal 1rem Open Sans;
+  margin-top: 15px;
+  margin-bottom: 60px;
+
+  opacity: 1;
+
+}
+
+.opening__section__btn {
+  background: var(--primary-blue);
+  color: var(--primary-white);
+  font-weight: bold;
+  padding: 20px 155px;
+
+  box-shadow: 5px 10px 14px var(--mint);
+  border-radius: 40px;
+  opacity: 1;
+  }
+
+.opening__section__image {
+  width: 100%;
+  height: auto;
+}
+
