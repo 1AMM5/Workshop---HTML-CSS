@@ -381,4 +381,151 @@ a { text-decoration: none;}
 }
 /*e: benefits*/
 
+/* pricing*/
+.pricing {
+  background-color: var(--color-white);
+  width: 1200px;
+  height: 620px;
+}
+
+
+.pricing h2 {
+  font-family: var(--font-raleway);
+  font-size: 2.25rem;
+  font-weight: 400;
+
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.pricing__boxes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 50px;
+}
+
+.pricing__box {
+  background: var(--color-white) 0% 0% no-repeat padding-box;
+  border: 1px solid;
+  border-radius: 18px;
+
+  opacity: 1;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 50px;
+}
+
+ .pricing__type {
+  font-family: var(--font-raleway);
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.pricing__price {
+  font-size: 2.875rem;
+
+}
+
+.pricing__items {
+  font-size: 0.875rem;
+  line-height: 40px;
+}
+
+.pricing__item::before {
+  content: "";
+  width: 11px;
+  height: 11px;
+  display: inline-block;
+  margin-right: 10px;
+  background-image: url("../assets/Checkmark-1.svg");
+}
+
+.pricing__item--not::before {
+  background-image: url("../assets/Close.svg");
+}
+
+.pricing__box .btn {
+  position: relative;
+  bottom: -45px;
+  font-size: 0.8125rem;
+
+  background: var(--color-white) 0% 0% no-repeat padding-box;
+  border: 1px solid;
+  border-radius: 18px;
+
+  color: white;
+  font-weight: bold;
+  display: inline-block;
+  padding: 16px 65px;
+}
+
+.pricing__box--basic,
+.pricing__box--premium {
+  top: 3052px;
+  left: 180px;
+  width: 372px;
+  height: 461px;
+}
+
+/*basic*/
+
+.pricing__box--basic {
+  border-color: var(--color-redish);
+}
+
+.pricing__box--basic .pricing__price {
+  color: var(--color-redish);
+}
+
+.pricing__box--basic .btn {
+  background-color: var(--color-redish);
+}
+
+/*professional*/
+.pricing__box--professional {
+  top: 3031px;
+  left: 611px;
+  width: 405px;
+  height: 500px;
+}
+
+.pricing__box--professional {
+  border-color: var(--color-primary);
+  box-shadow: 3px 10px 14px var(--color-primary-shadow);
+}
+
+.pricing__box--professional .pricing__price {
+  color: var(--color-primary);
+}
+
+.pricing__box--professional .btn {
+  background-color: var(--color-primary);
+}
+
+/*premium*/
+.pricing__box--premium {
+  border-color: var(--color-green);
+}
+
+.pricing__box--premium .pricing__price {
+  color: var(--color-green);
+}
+
+.pricing__box--premium .btn {
+  background-color: var(--color-green);
+}
+
+
+
+
+
+
 
